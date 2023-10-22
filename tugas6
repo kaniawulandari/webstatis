@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/icon2" href="images6/logotmii.png">
+    <title>TMII</title>
+</head>
+<body>
+    <div class="background">
+        <h1 class="head">TAMAN MINI INDONESIA INDAH (TMII) </h1>
+    </div>
+    
+    <div class="wrapper-content"><br><br>
+    <h2 class="head">Tentang Kami</h2><br>
+        <p> Dari Sabang hingga Merauke, ribuan ragam corak adat dan budaya telah melengkapi berbagai aspek kehidupan di Indonesia. Masing-masing adat dan budaya Indonesia ini telah menjadi identitas setiap daerah di seluruh penjuru nusantara. Kekayaan nusantara inilah yang menjadi gagasan pembangunan Taman Mini “Indonesia Indah” (TMII) oleh Ibu Negara Siti Hartinah, atau yang lebih dikenal sebagai Ibu Tien Soeharto.
+        Berdiri di atas area seluas 150 hektar, Taman Mini “Indonesia Indah” hadir sebagai rangkuman kebudayaan 33 provinsi bangsa Indonesia dalam bentuk miniatur kepulauan nusantara lengkap dengan anjungan daerah, bangunan dan arsitektur tradisional, kesenian daerah, taman rekreasi, dan berbagai macam wahana yang menawarkan sarana seni, rekreasi, dan edukasi bagi pengunjung.</p>
+        <p>Transformasi #WajahBaruTMII diperkenalkan ke publik pada awal September 2023 sebagai ikon wisata kultural dan sarana edukasi akan keragaman budaya Indonesia. TMII juga yang menawarkan pengalaman yang #SeruGakAdaHabisnya melalui banyak kegiatan seni yang mengikutsertakan pengunjung dalam setiap aktifitasnya.</p>
+        <p>#WajahBaruTMII hadir dengan mengusung 4 pilar, yaitu green dengan konsep eco-park di mana 70% areanya merupakan area hijau, inclusive untuk semua lapisan masyarakat, culture di mana TMII menjadi destinasi wisata yang mempresentasikan ragam budaya Indonesia, dan smart sebagai fokus dalam implementasi platform digital.
+        <br><br></p>
+        <br>
+    <h3 class="head">Destinasi Wisata</h3><br>
+        <div class="gambar-container">
+        <img src="images6/anjungan2.jpg" alt="anjungan"><br>
+            <p class="pback"><b>Anjungan Daerah</b></p>
+        <br><img src="images6/museum.jpg" alt="museum"><br>
+            <p class="pback"><b>Koleksi Sejarah dan Budaya Nusantara</b></p>
+        <br><img src="images6/gereja.jpg" alt="gereja"><br>
+            <p class="pback"><b>Tempat Ibadah</b></p>
+        <br><img src="images6/wahana.jpg" alt="Wahana"><br>
+            <p class="pback"><b>Wahana Rekreasi</b></p>
+        <br><img src="images6/burung.jpg" alt="Taman Burung"><br>
+            <p class="pback"><b>Taman Burung</b></p><br><br>
+        </div>
+    <h3 class="head">Tiket & Jam Buka</h3><br>
+        <h3 class="head2"><b><mark class="warna-highlight">TIKET UMUM</mark></b><br>JAM OPERASIONAL DAN HARGA TIKET<br>Senin - Minggu<br>06.00 - 20.00 WIB</div>
+            <div class="container">
+                <main class = "grid">
+                    <article>
+                        <img src="images6/masuk.png" width="500px" height="500px">
+                        <div class="konten">
+                            <h2 class="head2">Pintu Masuk</h2>
+                            <P class="p2">Rp. 25.000,-</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="images6/mobil.png" width="500px" height="500px">
+                        <div class="konten">
+                            <h2 class="head2">Mobil</h2>
+                            <P class="p2">Rp. 35.000,-</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="images6/motor.png" width="500px" height="500px">
+                        <div class="konten">
+                            <h2 class="head2">Motor</h2>
+                            <P class="p2">Rp. 15.000,-</P>
+                        </div>
+                </main>
+                <main class = "grid">
+                    <article>
+                        <img src="images6/sepeda.png" width="500px" height="500px">
+                        <div class="konten">
+                            <h2 class="head2">Sepeda</h2>
+                            <P class="p2">Rp. 10.000,-</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="images6/bus.png" width="500px" height="500px">
+                        <div class="konten">
+                            <h2 class="head2">Bus</h2>
+                            <P class="p2">Rp. 60.000,-</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="images6/truk.png" width="500px" height="500px">
+                        <div class="konten">
+                            <h2 class="head2">Truk</h2>
+                            <P class="p2">Rp. 60.000,-</P>
+                        </div>
+                </main></div>
+                <hr color="black"> 
+                <h2 class="nama">NAMA : KANIA WULANDARI
+                    <br>NIM : 11210251000047 <br> KELAS : 5A</h2>
+                </body>
+                </html>

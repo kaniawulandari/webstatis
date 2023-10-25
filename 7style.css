@@ -133,3 +133,48 @@ a:link, a:visited {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    background-color: rgb(12, 156, 12);
+    background-size: cover;
+    color: black;
+    font-family: erdana, Tahoma, sans-serif;
+    text-align: left;
+  }
+  .icon-container {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .fa-twitter{
+    color: rgb(245, 214, 75);
+    font-size: 48px; 
+  }
+  .fa-instagram {
+    color: rgb(245, 214, 75);
+    font-size: 48px; 
+  }
+  
+  .fa-envelope {
+    color:rgb(245, 214, 75);
+    font-size: 48px; 
+  }
+  
+  .fa-facebook {
+    color:rgb(245, 214, 75);
+    font-size: 48px; 
+  }
+.nama{
+    background-color: rgb(245, 214, 75);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-align: center;
+}

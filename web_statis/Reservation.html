@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="UTS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+  <link rel="icon" type="image/x-icon" href="imagesuts/logo.png">
+</head>
+
+<!-- NAVBAR DAN SIDEBAR -->
+<header>
+    <a href="#" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich"></a>
+    <div class="navigation">
+        <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item"><a href="Home.html">HOME</a></li>
+            <li class="menu-item"><a href="About.html">ABOUT US</a></li>
+            <li class="menu-item">
+                <a class="sub-btn" href="Rooms.html">ROOMS <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li class="sub-item"><a href="Rooms.html">Partial View</a></li>
+                    <li class="sub-item"><a href="Rooms.html">Standard</a></li>
+                    <li class="sub-item"><a href="Rooms.html">Bay View</a></li>
+                    <li class="sub-item"><a href="Rooms.html">Square View</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="menu-btn"></div>
+    <div class="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="FAQ.html">FAQ?</a></li>
+            <li><a href="Reservation.html">RESERVATIONS</a></li>
+        </ul>
+    </div>
+    
+    <script src="UTS.js"></script>
+</header>
+<br><br><br>
+<body>
+        
+  <section class = "banner">
+      <div class = "card-container">
+          <div class = "card-img">
+          </div>
+
+          <div class = "card-content">
+              <h3>RESERVASI</h3>
+              <form>
+                <div class = "form-row">
+                  <input type = "text" placeholder="Nama Lengkap">
+                  <input type = "text" placeholder="Email atau Nomor HP">
+              </div>
+
+              <div class = "form-row">
+                  <input type = "number" placeholder="Berapa Orang?" min = "1">
+                  <select name = "hours">
+                    <option value = "hour-select">Pilih Type Rooms</option>
+                    <option value = "10">Standard Room (Partial View)</option>
+                    <option value = "10">Superior Accessible Room</option>
+                    <option value = "10">Standard Room (Bay View)</option>
+                    <option value = "10">Superior Room (Square View)</option>
+                </select>
+              </div>
+                <h4>Check In</h4>
+                  <div class = "form-row">
+                      <div>
+                        <input type="date" id="tanggal" name="tanggal">
+                      </div>
+
+                      <select name = "hours">
+                          <option value = "hour-select">Pilih Jam Check In</option>
+                          <option value = "10">10: 00</option>
+                          <option value = "10">12: 00</option>
+                          <option value = "10">14: 00</option>
+                          <option value = "10">16: 00</option>
+                          <option value = "10">18: 00</option>
+                          <option value = "10">20: 00</option>
+                          <option value = "10">22: 00</option>
+                      </select>
+                  </div>
+                  <h4>Check Out</h4>
+                  <div class = "form-row">
+                      <div>
+                        <input type="date" id="tanggal" name="tanggal">
+                      </div>
+
+                      <select name = "hours">
+                          <option value = "hour-select">Pilih Jam Check Out</option>
+                          <option value = "10">10: 00</option>
+                          <option value = "10">12: 00</option>
+                          <option value = "10">14: 00</option>
+                          <option value = "10">16: 00</option>
+                          <option value = "10">18: 00</option>
+                          <option value = "10">20: 00</option>
+                          <option value = "10">22: 00</option>
+                      </select>
+                  </div>
+                  <input type = "submit" value = "BOOK ROOM">
+              </form>
+          </div>
+      </div>
+  </section>
+  
+</body>
+
+<article class="footer">
+    <footer class="footer-distributed">
+    
+          <div class="footer-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich">
+          </div>
+    
+          <div class="footer-center">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span>Tokyo Disney Resort</span> 1-47 Maihama, Urayasu, Chiba, Jepang</p>
+            </div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="https://dhotelscontact.tokyodisneyresort.jp/form/pub/dh_info/mrhen">@tokyodisneyresort.jp</a></p>
+            </div>
+          </div>
+    
+          <div class="footer-right">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+81 47-305-5555</p>
+              </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/tokyodisneyresort_official/"><i class="fa-brands fa-instagram"></i></a>
+                <p><a href="https://www.instagram.com/tokyodisneyresort_official/">@tokyodisneyresort_official</a></p>
+            </div>
+    
+          </div>
+    
+        </footer>
+        <br><br>
+    <div class="copy-right"> &copy;2023 created by <span class="copy-right span">KANIA WULANDARI - <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh.html">website official</a></span></div>
+ 
+ </article>

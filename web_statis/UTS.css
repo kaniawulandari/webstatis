@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=PT+Mono&family=Playpen+Sans:wght@300&family=Raleway:wght@600&family=Rowdies:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rowdies", "Alex Brush", "Agbalumo", sans-serif;
+}
+article{
+    padding: 20px 100px;
+}
+.article-home{
+    position: relative;
+    min-height: 100vh;
+    background: url(imagesuts/toystoryhotel.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    padding: 0 100px;
+    transition: 0.6s;
+}
+header .logo{
+    width: 5%;
+    height: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header .navigation{
+    position: relative;
+    line-height: 75px;
+}
+header .navigation .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    user-select: none;
+}
+.menu-item > a{
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 20px;
+    padding: 25px 0;
+}
+.menu-item > a:hover{
+    color: #65a9e9;
+    transition: 0.3s;
+}
+.menu-item .sub-menu{
+    position: absolute;
+    background: white;
+    top: 74px;
+    line-height: 40px;
+    list-style: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    pointer-events: none;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+.menu-item:hover .sub-menu{
+    pointer-events: all;
+    transform: translateY(0);
+    opacity: 1;
+}
+.menu-item .sub-menu .sub-item{
+    position: relative;
+    padding: 7px 0;
+    cursor: pointer;
+    box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
+}
+.menu-item .sub-menu .sub-item a{
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+.menu-item .sub-menu .sub-item:hover{
+    background: #65a9e9;
+}
+.menu-item .sub-menu .sub-item:last-child:hover{
+    border-radius: 0 0 8px 8px;
+}
+
+@media (max-width: 1060px){
+    header .navigation .menu{
+        position: fixed;
+        display: block;
+        background: #23252b;
+        min-width: 350px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 90px 50px;
+        overflow-y: auto;
+        justify-content: center;
+        list-style: none;
+        user-select: none;
+    }
+    .menu-item{
+        position: relative;
+    }
+    .menu-item .sub-menu{
+        opacity: 1;
+        position: relative;
+        top: 0;
+        transform: translateX(10px);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .menu-item:hover .sub-menu{
+        transform: translateX(10px);
+    }
+    .menu-item .sub-menu .sub-item{
+        box-shadow: none;
+    }
+    .menu-item .sub-menu .sub-item:hover{
+        background: none;
+    }
+    .menu-item .sub-menu .sub-item a:hover{
+        color: #65a9e9;
+        transition: 0.3s;
+    }
+    .close-btn{
+        position: absolute;
+        background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F211652%2Fclose_icon&psig=AOvVaw0NOvKp7D7S-9pgsHWN6KYb&ust=1699942513348000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCODen7-pwIIDFQAAAAAdAAAAABAD)no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 25px;
+        background-position: center;
+        top: 0;
+        left: 0;
+        margin: 25px;
+        cursor: pointer;
+    }
+    .menu-btn{
+        background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickpng.com%2Fid%2Fimg%2Fmeme%2Fkartun%2Fmonopoli%2Fikon-menu&psig=AOvVaw1veRQid4fQtASCfIAcRd15&ust=1699943053275000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNCU1sKrwIIDFQAAAAAdAAAAABAD)no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+        background-position: center;
+        cursor: pointer;
+    }
+}
+.content {
+    padding: 16px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #65a9e9;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-btn span {
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 6px;
+    display: block;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover span {
+    background-color: #f1f1f1;
+}
+.marquee{
+    direction: left;
+    font-size: 250%; 
+    font-family: "Alex Brush", sans-serif;
+}
+.widget {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Profil */
+.profil {
+    text-align: center; 
+    font-family: "Agbalumo", sans-serif;
+}
+
+.profil img {
+    width: 100%;
+    height: auto; 
+
+}
+.profil h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+    font-family: "Agbalumo", sans-serif;
+    color: #333;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+.profil p{
+    color: #333;
+    text-align: justify;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 20px;
+    border-radius: 7px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.room{
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+.room h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 20px 0;
+    font-family: "Agbalumo", sans-serif;
+    color: black;
+    padding-left: 10px;
+    padding-right: 40px;
+    text-align: center;
+}
+.room .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.room .box-container .box {
+    margin-bottom: 1rem;
+    box-shadow: black;
+    padding: 1rem 2rem;
+    text-align: justify;
+    border-radius: 2rem;
+    cursor: pointer;
+    height: 100%;
+    width: 100%; 
+}
+
+.room .box-container .box img{
+    height: 8rem;
+    margin: 1rem 0;
+}
+.room .box-container .box h3{
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+}
+
+.room .box-container .box .price{
+    font-family: "Playpen Sans", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+.btn-room{
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: "Playpen Sans", sans-serif;
+    padding: .7rem 2rem;
+    border-radius: 5rem;
+    background: white;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+}
+.btn:hover{
+    background: #65a9e9;
+}
+.akses .content h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 20px 0;
+    font-family: "Agbalumo", sans-serif;
+    color: black;
+    padding-left: 10px;
+    padding-right: 40px;
+    text-align: left;
+}
+.akses .content p{
+    color: #333;
+    text-align: justify;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 20px;
+    border-radius: 7px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.akses .content .icons-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 3rem;
+}
+
+.akses .content .icons-container .icons{
+  flex: 1 1 16rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.akses .content .icons-container .icons .fa{
+  height: 5rem;
+  font-size: 4rem;
+  color: #65a9e9;
+}
+
+.akses .content .icons-container .icons h2{
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Playpen Sans", sans-serif;
+  font-weight: normal;
+}
+
+/* Footer */
+.footer{
+    background: #2e6b83;
+    background-position: center;
+    background-size: cover;
+}
+.footer .copy-right{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding-bottom: 0;
+}
+.footer .copy-right .span{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding-bottom: 0;
+}
+.footer-distributed{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 15px 10px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-distributed .footer-left img{
+  width: 70%;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 10px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: white;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  white;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+.footer-distributed .footer-left{
+  width: 16%;
+  margin-left: 80px;
+  margin-right: 140px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-right i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-right p{
+  display: inline-block;
+  color: white;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-right p a{
+  color:  white;
+  text-decoration: none;;
+}
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+/* About */
+.about-us {
+    display: flex;
+    align-items: center;
+}
+
+.about-image img {
+    width: 95%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 145px;
+    border-radius: 8px; 
+    margin-right: 60px; 
+}
+
+.about-content {
+    max-width: 600px;
+    margin-top: 45px;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+    font-family: "Agbalumo", sans-serif;
+    color: black;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.about-content p {
+    color: #333;
+    text-align: justify;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 15px;
+    border-radius: 7px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    margin-left: 16px;
+    margin-right: 50px;
+}
+.about-content-toy p{
+    color: #333;
+    text-align: justify;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 15px;
+    border-radius: 7px;
+    padding-top: 14px;
+    padding-bottom: 8px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.youtube-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.youtube-section {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* Rooms */
+.room{
+    padding-bottom: 25px;
+    color: black;
+    background-color: #bbd9f5e7;
+    padding: 0;
+}
+
+.rooms h3{
+    text-align: center; 
+    color: white;
+    font-family: "Agbalumo", sans-serif;
+    font-size: 34px;
+    background-color: rgb(28, 57, 83);
+}
+.rooms-text{
+    padding: 5px 20px;
+}
+.rooms-text p{
+    padding: 5px 20px;
+    font-family: "Playpen Sans", sans-serif;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+.rooms-text ul{
+    list-style-type: none;
+    margin-right: 420px;
+    margin-left: 420px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(28, 57, 83);
+}
+.rooms-text ul li{
+    padding-top: 13px;
+    padding-bottom: 8px;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.image-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+table {
+    font-family: "Playpen Sans", sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+    padding-top: 40px;
+}
+th{
+    font-size: 16px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: rgb(8, 8, 8);
+}
+td{
+    font-size: 16px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: rgb(8, 8, 8);
+    text-align: center;;
+    font-family: "Playpen Sans", sans-serif;
+}
+tr{
+    font-size: 16px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: rgb(13, 14, 13);
+}
+li{
+    text-align: left;
+    font-size: 16px;
+    padding-left: 5px; 
+    padding-right: 5px; 
+    font-family: "Playpen Sans", sans-serif;
+}  
+.content-faq{
+    background-image: url(imagesuts/can.jpeg);
+    font-family: "Playpen Sans", sans-serif;
+}
+.title-content{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: white;
+    font-family: "Agbalumo", sans-serif;
+}
+.questions-container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.788);
+    text-align: justify;
+}
+.questions-container span{
+    font-family: "Playpen Sans", sans-serif;
+    text-align: left;
+}
+.question{
+    border-bottom: 1px solid white;
+    font-family:"Playpen Sans", sans-serif;
+}
+.question button{
+    width: 100%;
+    background-color: #2e6b83;
+    display: flex;
+    font-family: "Playpen Sans", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: #fff;
+}
+
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+
+/* gallery */
+
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .box-container .box{
+    height: 25rem;
+    flex: 1 1 30rem;
+    border: 1rem solid white;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box .content{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.gallery .box-container .box:hover .content{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.gallery .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.gallery .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(#2e6b83, #6ea4b9), url(#) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 490px 490px;
+}
+.card-img{
+    background: url(https://media2.tokyodisneyresort.jp/home/hotel/images/tsh/mainVisual_02.jpg) center/cover no-repeat;
+}
+.banner h2{
+    font-size: 40px;
+    font-family: "Agbalumo", sans-serif;
+    color: black;
+    text-align: center;
+}
+.banner h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+    color: black;
+    padding-bottom: 0.3px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+.card-content{
+    background: #fff;
+    height: 490px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: black;
+}
+form input[type = submit]{
+    color: #0f0f0f;
+    background: #9dbfdf;
+    padding: 18px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 123px;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}

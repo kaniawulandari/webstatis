@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="UTS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+  <link rel="icon" type="image/x-icon" href="imagesuts/logo.png">
+</head>
+
+<!-- NAVBAR DAN SIDEBAR -->
+<header>
+    <a href="#" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich"></a>
+    <div class="navigation">
+        <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item"><a href="Home.html">HOME</a></li>
+            <li class="menu-item"><a href="About.html">ABOUT US</a></li>
+            <li class="menu-item">
+                <a class="sub-btn" href="Rooms.html">ROOMS <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li class="sub-item"><a href="Rooms.html">Partial View</a></li>
+                    <li class="sub-item"><a href="Rooms.html">Standard</a></li>
+                    <li class="sub-item"><a href="Rooms.html">Bay View</a></li>
+                    <li class="sub-item"><a href="Rooms.html">Square View</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="menu-btn"></div>
+    <div class="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="FAQ.html">FAQ?</a></li>
+            <li><a href="Reservation.html">RESERVATIONS</a></li>
+        </ul>
+    </div>
+    
+</header>
+<br><br><br><br><br>
+<h1 class="title-content">Pertanyaan yang sering diajukan</h1>
+<body>
+<article class="content-faq">
+<section>
+    <div class="questions-container">
+        <div class="question">
+            <button>
+                <span>Kapan waktu check-in dan check-out di Toy Story Hotel?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Waktu check-in dijadwalkan pada pukul 15:00 <br>- Prosedur check-in dapat dimulai lebih awal tergantung kemacetan.
+            <br>"Layanan Pra Check-in" ditawarkan, yang memungkinkan Tamu menyelesaikan prosedur check-in untuk masa menginap mereka sebelum waktu check-in reguler.<br>Waktu check-out adalah pukul 12:00 siang.</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Saya akan menginap di hotel lain pada hari saya check out dari Toy Story Hotel. Bisakah saya mengirimkan bagasi saya?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Jika hotel Anda berikutnya adalah Hotel Disney (tipe deluxe/moderat) atau Hotel Resmi Tokyo Disney Resort, bagasi Anda akan diantar ke hotel berikutnya secara gratis.<br>
+                Silakan membawa bagasi Anda langsung ke Konter Layanan Tamu atau Bell Desk sebelum pukul 12:00 siang pada hari check-out, atau hubungi SERVICE HOTLINE dari kamar Anda.</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Apakah ada mesin cuci yang dioperasikan dengan koin di Toy Story Hotel?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p> Tersedia 24 jam dengan biaya :<br>- Mesin cuci: 300 yen per muatan (dispenser deterjen otomatis)<br>- Pengering: 100 yen per 15 menit
+                <br>- Kunci kamar diperlukan untuk memasuki ruang cuci </p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Apakah sarapan sudah termasuk dalam harga kamar di Toy Story Hotel?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>tidak termasuk dalam semua harga kamar. Jika Anda ingin sarapan, silakan melakukan pemesanan terlebih dahulu dan membeli tiket makan dari mesin penjual tiket di " Lotso Garden Cafe " selama Anda menginap.</p>
+        </div>
+        <div class="question">
+            <button>
+                <span>Saya akan menginap di Toy Story Hotel. Bisakah saya mengirim bagasi saya ke hotel terlebih dahulu?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Silakan kirim ke alamat berikut.<br>
+                Bagasi akan disimpan di konter layanan Tamu. Harap tunjukkan salinan slip pengiriman saat Anda mengambil bagasi pada hari Anda menginap.<br>
+                - Pastikan untuk menuliskan :<br>(1)nama perwakilan pemesanan, dan <br>(2)tanggal kedatangan di kolom keterangan slip pengiriman.<br>
+                Jika Anda melakukan pemesanan melalui agen perjalanan, pastikan untuk mencantumkan nama agen perjalanan tersebut.<br>
+                - Jika Tamu lain selain perwakilan pemesanan yang mengirimkan bagasi, harap sertakan nomor telepon atau alamat perwakilan tersebut selain nama perwakilan dan tanggal kedatangan.<br>
+                - Silakan kirim bagasi Anda dengan biaya sendiri. Bagasi yang dikirim sebagai pembayaran saat pengiriman atau pembayaran tunai saat pengiriman mungkin tidak diterima.</p>
+        </div>
+        <div class="question">
+            <button>
+                <span>Apakah Tamu yang tidak menginap di Toy Story Hotel juga dapat memasuki hotel dan pekarangannya?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Hanya Tamu yang menginap di Tokyo Disney Resort Toy Story Hotel yang boleh memasuki hotel dan pekarangan.<br>
+                Harap dicatat bahwa akses masuk ke restoran dan toko di hotel juga akan dibatasi untuk Tamu yang menginap di Tokyo Disney Resort Toy Story Hotel.</p>
+        </div>
+    </div>
+</section><br><br><br>
+</article>
+<article class="footer">
+    <footer class="footer-distributed">
+    
+          <div class="footer-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich">
+          </div>
+    
+          <div class="footer-center">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span>Tokyo Disney Resort</span> 1-47 Maihama, Urayasu, Chiba, Jepang</p>
+            </div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="https://dhotelscontact.tokyodisneyresort.jp/form/pub/dh_info/mrhen">@tokyodisneyresort.jp</a></p>
+            </div>
+          </div>
+    
+          <div class="footer-right">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+81 47-305-5555</p>
+              </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/tokyodisneyresort_official/"><i class="fa-brands fa-instagram"></i></a>
+                <p><a href="https://www.instagram.com/tokyodisneyresort_official/">@tokyodisneyresort_official</a></p>
+            </div>
+    
+          </div>
+    
+        </footer>
+        <br><br>
+    <div class="copy-right"> &copy;2023 created by <span class="copy-right span">KANIA WULANDARI - <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh.html">website official</a></span></div>
+ 
+ </article>
+ <script src="UTS.js"></script>
+</body>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="UTS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+  <link rel="icon" type="image/x-icon" href="imagesuts/logo.png">
+</head>
+
+<!-- NAVBAR DAN SIDEBAR -->
+<header>
+    <a href="#" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich"></a>
+    <div class="navigation">
+        <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item"><a href="Home.html">HOME</a></li>
+            <li class="menu-item"><a href="About.html">ABOUT US</a></li>
+            <li class="menu-item">
+                <a class="sub-btn" href="Rooms.html">ROOMS <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li class="sub-item"><a href="#">Partial View</a></li>
+                    <li class="sub-item"><a href="#">Standard</a></li>
+                    <li class="sub-item"><a href="#">Bay View</a></li>
+                    <li class="sub-item"><a href="#">Square View</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="menu-btn"></div>
+    <div class="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="FAQ.html">FAQ?</a></li>
+            <li><a href="Reservation.html">RESERVATIONS</a></li>
+        </ul>
+    </div>
+    
+    <script src="UTS.js"></script>
+</header>
+
+<section class = "rooms sec-width" id = "rooms">
+  <div class = "title">
+  </div><br><br><br><br>
+  <h3>Standard Room (Partial View)</h3>
+  <article class = "rooms" style= "background: linear-gradient(#ebf0f1d2, #80ceecbd), url(imagesuts/alien.jpg) center/cover no-repeat">
+        <div class="image-container-wrapper">
+          <div class="image-container" id="left-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1708_image_1.jpg?mod=20220613113711" alt="Gambar 1">
+          </div>
+      
+          <div class="image-container" id="right-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1708_image_2.jpg?mod=20220613113711" alt="Gambar 2">
+          </div>
+        </div>
+          <div class = "rooms-text">
+            <P>Sebagian besar kamar ini dapat menampung hingga tiga tamu (dua tempat tidur biasa dan satu tempat tidur beroda). Beberapa kamar juga dilengkapi tempat tidur tarik dan dapat menampung hingga empat tamu.
+              <br>- Partical View : Kamar ini, terletak di lantai tiga di atas pintu masuk utama hotel, menawarkan pemandangan yang mungkin sebagian terhalang oleh bangunan.
+              <br>- Semua kamar tamu bebas rokok.
+              <br>- Kapasitas:	3 orang atau 4 orang <br>- Jenis tempat tidur：	Kembar <br>- Luas ruangan：	27 m² atau 29 m²
+            </P>
+              <ul>
+                  <li>$1,5 jt/malam </li>
+              </ul><br><br>
+          </div>
+
+      </article>
+      <h3>Superior Accessible Room</h3>
+      <article class = "rooms" style= "background: linear-gradient(#ebf0f1d2, #80ceecbd), url(imagesuts/alien.jpg) center/cover no-repeat">
+        <div class="image-container-wrapper">
+          <div class="image-container" id="left-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1728_image_1.jpg?mod=20221206132925" alt="Gambar 1">
+          </div>
+      
+          <div class="image-container" id="right-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1728_image_2.jpg?mod=20221206132925" alt="Gambar 2">
+          </div>
+        </div>
+          <div class = "rooms-text">
+            <P>Selain dua tempat tidur biasa, kamar ini memiliki tempat tidur beroda dan tempat tidur tarik untuk menampung hingga empat Tamu. Kamar ini dirancang untuk memberikan peningkatan aksesibilitas dan kenyamanan bagi Tamu yang menggunakan kursi roda.
+              <br>- Tata letak sebenarnya mungkin berbeda dari gambar yang ditampilkan. Untuk lebih jelasnya, silakan menghubungi hotel secara langsung.
+              <br>- Semua kamar tamu bebas rokok.
+              <br>- Kapasitas:	3 orang atau 4 orang <br>- Jenis tempat tidur：	Kembar <br>- Luas ruangan：	55 m² 
+            </P> <p style="text-align: center;">Spesifikasi Ruangan :</p>
+              <table style="border: 4cm; margin: auto;">
+                <tr style="background-color: rgba(152, 161, 243, 0.781)">
+                    <td> Pintu Masuk </td> 
+                    <td style="text-align: left;">  Lebar efektif: 83cm</td>
+                  <tr style="background-color: white">
+                    <td> Pintu masuk kamar tidur </td> 
+                    <td style="text-align: left;">Lebar pintu masuk kamar tidur: 140cm</td>
+                    <tr style="background-color: rgba(152, 161, 243, 0.781)"> 
+                      <td > Kamar tidur	</td> 
+                      <td style="text-align: left;"> Tinggi tempat tidur : 45cm<br>
+                            Jarak antar tempat tidur : 50cm </td>
+                      <tr style="background-color: white">
+                        <td> Kamar mandi</td> 
+                        <td style="text-align: left;">Pegangan tangan di dinding di atas bak mandi (3 lokasi), pegangan tangan di dinding di atas lantai kamar mandi (2 lokasi)</td>
+                        <tr style="background-color: rgba(152, 161, 243, 0.781)"> 
+                          <td > Bak mandi	</td> 
+                          <td style="text-align: left;"> Kedalaman: 50cm (tinggi dari lantai ke atas bak mandi: 44cm)
+                            <br>Kancing pancuran di bak mandi: 75cm dari lantai
+                            <br>Kancing pancuran di area pancuran: 70cm dari lantai
+                            <br>- Keset kamar mandi, papan mandi, dan bangku pancuran tersedia untuk disewa.</td>
+                            <tr style="background-color: white">
+                              <td> Kamar mandi</td> 
+                              <td style="text-align: left;"> Kedalaman: 50cm (tinggi dari lantai ke atas bak mandi: 44cm)
+                                <br>Pegangan toilet (di kedua sisi saat duduk)
+                                <br>- Terdapat pintu geser antara toilet dan kamar mandi lebar 79 cm</td>
+                                <tr style="background-color: rgba(152, 161, 243, 0.781)"> 
+                                  <td > Kamar kecil		</td> 
+                                  <td style="text-align: left;"> Lebar efektif pintu masuk: 92cm, pintu geser</td>
+                                  <tr style="background-color: white">
+                                    <td> Wastafel</td> 
+                                    <td style="text-align: left;"> Tinggi counter : 79cm
+                                      <br>Bukaan dibawah counter : 68cm</td>
+            </table>
+            <br><ul>
+              <li>$3 jt/malam </li>
+          </ul><br>
+          </div>
+      </article>
+      <h3>Standard Room (Bay View)</h3>
+      <article class = "rooms" style= "background: linear-gradient(#ebf0f1d2, #80ceecbd), url(imagesuts/alien.jpg) center/cover no-repeat">
+        <div class="image-container-wrapper">
+          <div class="image-container" id="left-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1718_image_1.jpg?mod=20221206132642" alt="Gambar 1">
+          </div>
+      
+          <div class="image-container" id="right-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1718_image_2.jpg?mod=20221206132642" alt="Gambar 2">
+          </div>
+        </div>
+          <div class = "rooms-text">
+            <P>Sebagian besar kamar ini dapat menampung hingga tiga tamu (dua tempat tidur biasa dan satu tempat tidur beroda). Beberapa kamar juga dilengkapi tempat tidur tarik dan dapat menampung hingga empat tamu.
+              <br>- Bay View : Kamar ini menawarkan pemandangan Teluk Tokyo.
+              <br>- Semua kamar tamu bebas rokok.
+              <br>- Kapasitas:	3 orang atau 4 orang <br>- Jenis tempat tidur：	Kembar <br>- Luas ruangan：	27 m² atau 28 m² </P>
+              <ul>
+                  <li>$1,7 jt/malam </li>
+              </ul>
+              </div>              
+          </div><br>
+
+      </article>
+      <h3>Superior Room (Square View)</h3>
+      <article class = "rooms" style= "background: linear-gradient(#ebf0f1d2, #80ceecbd), url(imagesuts/alien.jpg) center/cover no-repeat">
+        <div class="image-container-wrapper">
+          <div class="image-container" id="left-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1748_image_1.jpg?mod=20220613113553" alt="Gambar 1">
+          </div>
+      
+          <div class="image-container" id="right-image-container">
+              <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1748_image_2.jpg?mod=20220613113553" alt="Gambar 2">
+          </div>
+        </div>
+          <div class = "rooms-text">
+            <P>Dapat menampung hingga empat orang tamu, kamar ini dilengkapi dengan dua tempat tidur reguler, tempat tidur beroda, dan tempat tidur tarik.
+              <br>- Square Vies : Kamar ini menghadap ke Toy Friends Square, halaman yang menampilkan koleksi mainan, permainan, dan karakter favorit dari film Disney dan Pixar Toy Story.
+              <br>- Semua kamar tamu bebas rokok.
+              <br>- Kapasitas:	4 orang <br>- Jenis tempat tidur：	Kembar <br>- Luas ruangan：	35 m² </P>
+              <ul>
+                  <li>$3,5 jt/malam </li>
+              </ul>
+              </div>
+              <br>
+              
+          </div>
+
+      </article>
+      <h3>FASILITAS DI TIAP KAMAR</h3>
+    <article class = "rooms" style= "background: linear-gradient(#ebf0f1d2, #80ceecbd), url(imagesuts/alien.jpg) center/cover no-repeat">
+      <br><br><table style="border: 4cm; margin: auto">
+        <tr style="background-color: rgba(152, 161, 243, 0.781)">
+            <td> Amenitas </td> 
+            <td>
+                    <li>Sikat gigi</li>
+                    <li>Sikat rambut</li>
+                    <li>Sandal kamar</li>
+                    <li>Amenity kit (penyeka kapas, bola kapas, karet rambut)</li>
+                    <li>Pisau cukur tersedia di Konter Layanan Tamu.</li>
+            </td>
+        <tr style="background-color: white">
+            <td> Fasilitas</td> 
+            <td>
+                    <li>TV (stasiun siaran umum, Disney Channel)</li>
+                    <li>Handuk</li>
+                    <li>Sabun tangan</li>
+                    <li>Pengering rambut</li>
+                    <li>Piyama (untuk dewasa)</li>
+                    <li>Toilet dengan bidet</li>
+                    <li>Kotak penyimpanan aman</li>
+                    <li>Lemari es</li>
+                    <li>Kopi dan teh komplementer</li>
+                    <li>Kondisioner (dalam dispenser)</li>
+                    <li>Sabun mandi (dalam dispenser)</li>
+                    <li>Ketel listrik</li>
+                </td>
+        <tr style="background-color: rgba(152, 161, 243, 0.781)"> 
+            <td > Fasilitas untuk Anak-anak</td> 
+            <td>
+              <p style="text-align: left;">Tersedia di kamar</p>
+                    <li>Kursi anak-anak</li>
+              <p style="text-align: left;">Tersedia berdasarkan permintaan</p>
+                    <li>Piyama anak-anak</li>
+                    <li>Tas popok</li>
+                    <li>Sandal anak-anak</li>
+                    <li>Sikat gigi anak-anak</li>
+              <p style="text-align: left;">Tersedia melalui reservasi</p>
+                    <li>Tempat tidur bayi (di bawah 18 bulan)</li>
+                </td>
+        <tr style="background-color: white">
+            <td> Internet</td> 
+            <td>
+                    <li>Koneksi Internet gratis untuk perangkat yang kompatibel dengan Wi-Fi</li>
+                </td>
+        
+    </table><br><br><br>
+  </article>
+</section>
+
+<article class="footer">
+    <footer class="footer-distributed">
+    
+          <div class="footer-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich">
+          </div>
+    
+          <div class="footer-center">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span>Tokyo Disney Resort</span> 1-47 Maihama, Urayasu, Chiba, Jepang</p>
+            </div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="https://dhotelscontact.tokyodisneyresort.jp/form/pub/dh_info/mrhen">@tokyodisneyresort.jp</a></p>
+            </div>
+          </div>
+    
+          <div class="footer-right">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+81 47-305-5555</p>
+              </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/tokyodisneyresort_official/"><i class="fa-brands fa-instagram"></i></a>
+                <p><a href="https://www.instagram.com/tokyodisneyresort_official/">@tokyodisneyresort_official</a></p>
+            </div>
+    
+          </div>
+    
+        </footer>
+        <br><br>
+    <div class="copy-right"> &copy;2023 created by <span class="copy-right span">KANIA WULANDARI - <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh.html">website official</a></span></div>
+ 
+ </article>

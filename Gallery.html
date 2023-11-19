@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="UTS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+  <link rel="icon" type="image/x-icon" href="imagesuts/logo.png">
+</head>
+
+<!-- NAVBAR DAN SIDEBAR -->
+<header>
+    <a href="#" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich"></a>
+    <div class="navigation">
+        <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item"><a href="Home.html">HOME</a></li>
+            <li class="menu-item"><a href="About.html">ABOUT US</a></li>
+            <li class="menu-item">
+                <a class="sub-btn" href="#">ROOMS <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li class="sub-item"><a href="#">Partial View</a></li>
+                    <li class="sub-item"><a href="#">Standard</a></li>
+                    <li class="sub-item"><a href="#">Bay View</a></li>
+                    <li class="sub-item"><a href="#">Square View</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="menu-btn"></div>
+    <div class="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="#">FAQ?</a></li>
+            <li><a href="#">RESERVATIONS</a></li>
+        </ul>
+    </div>
+    
+    <script src="UTS.js"></script>
+</header>
+<br><br><br><br><br>
+<h1 class="title-content">GALLERY</h1>
+<section class="gallery" id="gallery">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/facility/fd_thumb.jpg" alt="">
+            <div class="content">
+                <h3>Resepsionis</h3>
+                <p>Terletak di lobi, Front Desk menangani prosedur check-in dan checkout serta menyediakan berbagai layanan lainnya.</p>
+                <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh/facility.html" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/facility/gsc_thumb.jpg" alt="">
+            <div class="content">
+                <h3>Konter Layanan Tamu</h3>
+                <p>Di Konter Layanan Tamu yang terletak di lobi, Tamu dapat membeli tiket Taman, menyimpan bagasi, dan mengajukan pertanyaan apa pun selama menginap.</p>
+                <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh/facility.html" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/facility/tfs_thumb.jpg" alt="">
+            <div class="content">
+                <h3>Lapangan Toy Friends</h3>
+                <p>Halamannya, yang diakses dari lobi, menampilkan patung Woody. Bo Peep, dan karakter Toy Story lainnya.</p>
+                <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh/facility.html" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/facility/sdp_thumb.jpg" alt="">
+            <div class="content">
+                <h3>Taman Slinky Dog</h3>
+                <p>Plaza di depan pintu masuk menampilkan permainan papan bertema Slinky, dengan patung Buzz Lightyear dan Jessie</p>
+                <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh/facility.html" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/restaurant/lotso/tsh_lotso04.jpg" alt="">
+            <div class="content">
+                <h3>Kafe Lotso Garden </h3>
+                <p>Menawarkan layanan prasmanan saat sarapan dan makan malam, restoran ini mengambil inspirasi dari Lotso, boneka beruang mewah berwarna merah muda dan putih yang ditampilkan dalam film Disney dan Pixar Toy Story 3</p>
+                <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh/facility.html" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/facility/gp_thumb.jpg" alt="">
+            <div class="content">
+                <h3>Gift Planet</h3>
+                <p>Selain merchandise Tokyo Disney Resort, para tamu juga dapat membeli item yang terinspirasi oleh karakter Toy Story .</p>
+                <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh/facility.html" class="btn">read more</a>
+            </div>
+        </div>   
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/gallery/gallery_07.jpg" alt="">
+            <div class="content">
+                <h3>Lobby</h3>
+                <p>Lobby yang di desain sangat unik dan colorfull untuk menyambut tamu hotel</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://media2.tokyodisneyresort.jp/home/hotel/tsh/gallery/gallery_02.jpg" alt="">
+            <div class="content">
+                <h3>Gedung</h3>
+                <p>Seluruh bangunan gedung hotel di desain sangat mirip seperti di dunia Toy Story</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section><br><br><br>
+
+<article class="footer">
+    <footer class="footer-distributed">
+    
+          <div class="footer-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich">
+          </div>
+    
+          <div class="footer-center">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span>Tokyo Disney Resort</span> 1-47 Maihama, Urayasu, Chiba, Jepang</p>
+            </div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="https://dhotelscontact.tokyodisneyresort.jp/form/pub/dh_info/mrhen">@tokyodisneyresort.jp</a></p>
+            </div>
+          </div>
+    
+          <div class="footer-right">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+81 47-305-5555</p>
+              </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/tokyodisneyresort_official/"><i class="fa-brands fa-instagram"></i></a>
+                <p><a href="https://www.instagram.com/tokyodisneyresort_official/">@tokyodisneyresort_official</a></p>
+            </div>
+    
+          </div>
+    
+        </footer>
+        <br><br>
+    <div class="copy-right"> &copy;2023 created by <span class="copy-right span">KANIA WULANDARI - <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh.html">website official</a></span></div>
+ 
+ </article>

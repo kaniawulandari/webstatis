@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="UTS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+  <link rel="icon" type="image/x-icon" href="imagesuts/logo.png">
+</head>
+
+<!-- NAVBAR DAN SIDEBAR -->
+<header>
+    <a href="#" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich"></a>
+    <div class="navigation">
+        <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item"><a href="Home.html">HOME</a></li>
+            <li class="menu-item"><a href="About.html">ABOUT</a></li>
+            <li class="menu-item">
+                <a class="sub-btn" href="Rooms.html">ROOMS <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li class="sub-item"><a href="#">Partial View</a></li>
+                    <li class="sub-item"><a href="#">Standard</a></li>
+                    <li class="sub-item"><a href="#">Bay View</a></li>
+                    <li class="sub-item"><a href="#">Square View</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="menu-btn"></div>
+    <div class="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="FAQ.html">FAQ?</a></li>
+            <li><a href="Reservation.html">RESERVATIONS</a></li>
+        </ul>
+    </div>
+    
+    <script src="UTS.js"></script>
+</header>
+<br><br><br><br>
+
+<!-- CONTENT HOME -->
+<article class="article-home"></article><br>
+<marquee class="marquee" scrollamount="17">
+    Selamat Datang di Toy Story Hotel
+    </marquee>
+        <article class="profil">
+            <img src="imagesuts/gedung.jpg" alt="gedung">
+            <h1>TOY STORY HOTEL</h1><br>
+                <p>Toy Story Hotel merupakan hotel Disney kelima di Jepang. Mengundang para tamu untuk masuk ke dalam dunia serial film Disney dan Pixar Toy Story yang telah meraih banyak penghargaan.Toy Story Hotel adalah bangunan yang dibangun dengan 11 lantai di atas tanah dan satu basement, menyediakan 575 kamar standar dan 20 kamar yang indah, dengan tema kamar Woody dan Buzz Lightyear.</p>
+        </article>
+            
+</article>
+
+<!-- rooms -->
+<article class="room" id="room">
+
+    <h1>OUR ROOMS</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1708_image_1.jpg?mod=20220613113711" alt="room1">
+            <h3>Standard Room (Partial View)</h3>
+            <span class="price">1,5jt/malam</span>
+            <a href="#" class="btn-room">Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1728_image_1.jpg?mod=20221206132925" alt="room3">
+            <h3>Superior Accessible Room</h3>
+            <span class="price">3jt/malam</span>
+            <a href="#" class="btn-room">Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1718_image_1.jpg?mod=20221206132642" alt="room4">
+            <h3>Standard Room (Bay View)</h3>
+            <span class="price">1,7jt/malam</span>
+            <a href="#" class="btn-room">Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://media1.tokyodisneyresort.jp/images/adventure/dh_room/1748_image_1.jpg?mod=20220613113553" alt="room6">
+            <h3>Superior Room (Square View)</h3>
+            <span class="price">3,5jt/malam</span>
+            <a href="#" class="btn-room">Read More</a>
+        </div>
+</article>
+<article class="akses" id="akses">
+    <div class="content">
+                    <h3>AKSES KE DAN DARI TOY STORY HOTEL</h3>
+                    <p>Anda dapat ke Toy Story Hotel dengan :</p>
+                    
+                    <div class="icons-container">
+                        <div class="icons">
+                            <i class="fa fa-subway" aria-hidden="true"></i>
+                            <h2>Menggunakan Kereta Api</h2>
+                            <p style="font-size: 15px;">Jika Anda datang ke Toy Story Hotel dengan kereta api, silakan turun di Stasiun Maihama di Jalur JR Keiyo & Musashino.</p>
+                        </div>
+                        <div class="icons">
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                            <h2>Menggunakan Mobil</h2>
+                            <p style="font-size: 15px;">Ambil Pintu Keluar Urayasu atau Pintu Keluar Kasai di Shuto Expressway Bayshore Route.</p>
+                        </div>
+                        <div class="icons">
+                            <i class="fa fa-plane" aria-hidden="true"></i>
+                            <h2>Akses dari Bandara</h2>
+                            <p style="font-size: 15px;">Layanan Bus beroperasi antara bandara dan hotel</p>
+                        </div>
+                    </div>
+                </div>
+</article>
+<article class="footer">
+    <footer class="footer-distributed">
+    
+          <div class="footer-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tokyo_Disney_Resort_Toy_Story_Hotel_Logo.svg" alt="Sandwich">
+          </div>
+    
+          <div class="footer-center">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span>Tokyo Disney Resort</span> 1-47 Maihama, Urayasu, Chiba, Jepang</p>
+            </div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="https://dhotelscontact.tokyodisneyresort.jp/form/pub/dh_info/mrhen">@tokyodisneyresort.jp</a></p>
+            </div>
+          </div>
+    
+          <div class="footer-right">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+81 47-305-5555</p>
+              </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/tokyodisneyresort_official/"><i class="fa-brands fa-instagram"></i></a>
+                <p><a href="https://www.instagram.com/tokyodisneyresort_official/">@tokyodisneyresort_official</a></p>
+            </div>
+    
+          </div>
+    
+        </footer>
+        <br><br>
+    <div class="copy-right"> &copy;2023 created by <span class="copy-right span">KANIA WULANDARI - <a href="https://www.tokyodisneyresort.jp/en/hotel/tsh.html">website official</a></span></div>
+ 
+ </article>
+
+</script>
+
+
+
+</body>

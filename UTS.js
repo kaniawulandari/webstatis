@@ -2,7 +2,17 @@ function toggleSidebar() {
     var sidebar = document.querySelector('.sidebar');
     sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
 }
+const buttons = document.querySelectorAll('button');
 
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
 function submitForm() {
     var form = document.getElementById('reservation-form');
     var nama = form.elements['nama'].value;
@@ -17,4 +27,4 @@ function submitForm() {
     console.log('Tanggal Check-out:', tanggalCheckout);
     console.log('Jumlah Tamu:', jumlahTamu);
 
-}
+}ZZZZZ
